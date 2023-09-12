@@ -42,9 +42,4 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
         _context.Entry(entity).State = EntityState.Modified;
         await _context.SaveChangesAsync();
     }
-
-    Task IGenericRepository<T>.CreateAsync(T entity)
-    {
-        throw new NotImplementedException();
-    }
 }
