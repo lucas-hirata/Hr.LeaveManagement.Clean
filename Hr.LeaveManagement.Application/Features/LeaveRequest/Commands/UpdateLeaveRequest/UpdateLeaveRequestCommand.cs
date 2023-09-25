@@ -1,0 +1,12 @@
+﻿using Hr.LeaveManagement.Application.Features.LeaveRequest.Shared;
+
+using MediatR;
+
+namespace Hr.LeaveManagement.Application.Features.LeaveRequest.Commands.UpdateLeaveRequest;
+
+public record UpdateLeaveRequestCommand : BaseLeaveRequest, IRequest<Unit>
+{
+    public int Id { get; set; }
+    public string RequestComments { get; set; } = string.Empty;
+    public bool Cancelled { get; set; }
+}

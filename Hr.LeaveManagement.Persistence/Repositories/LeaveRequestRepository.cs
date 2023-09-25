@@ -10,7 +10,7 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveReq
 {
     public LeaveRequestRepository(HrDatabaseContext context) : base(context) { }
 
-    public async Task<List<LeaveRequest>> GetLeaveResquestsWithDetails()
+    public async Task<List<LeaveRequest>> GetLeaveRequestsWithDetails()
     {
         var leaveRequests = await _context.LeaveRequests
             .Include(q => q.LeaveType)
@@ -27,7 +27,7 @@ public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveReq
         return leaveRequests;
     }
 
-    public async Task<LeaveRequest?> GetLeaveResquestWithDetails(int id)
+    public async Task<LeaveRequest?> GetLeaveRequestWithDetails(int id)
     {
         var leaveRequest = await _context.LeaveRequests
             .Include(q => q.LeaveType)
