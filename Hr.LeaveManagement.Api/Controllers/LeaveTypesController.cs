@@ -49,7 +49,7 @@ public class LeaveTypesController : ControllerBase
     public async Task<ActionResult> Post([FromBody] CreateLeaveTypeCommand request)
     {
         var response = await _mediator.Send(request);
-        return CreatedAtAction(nameof(Get), new { id = response });
+        return CreatedAtAction(nameof(Post), new { id = response });
     }
 
     // PUT api/<LeaveTypesController>/5
