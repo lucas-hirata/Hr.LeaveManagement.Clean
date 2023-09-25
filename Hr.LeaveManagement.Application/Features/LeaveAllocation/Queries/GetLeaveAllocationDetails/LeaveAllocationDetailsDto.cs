@@ -9,7 +9,4 @@ public record LeaveAllocationDetailsDto
     public LeaveTypeDto? LeaveType { get; set; }
     public int LeaveTypeId { get; set; }
     public int Period { get; set; }
-    public string EmployeeId { get; set; } = string.Empty;
-    public DateTime? DateCreated { get; set; }
-    public DateTime? DateModified { get; set; }
 }

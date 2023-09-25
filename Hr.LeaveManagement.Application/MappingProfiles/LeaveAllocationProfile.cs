@@ -3,7 +3,7 @@
 using Hr.LeaveManagement.Application.Features.LeaveAllocation.Commands.CreateLeaveAllocation;
 using Hr.LeaveManagement.Application.Features.LeaveAllocation.Commands.DeleteLeaveAllocation;
 using Hr.LeaveManagement.Application.Features.LeaveAllocation.Commands.UpdateLeaveAllocation;
-using Hr.LeaveManagement.Application.Features.LeaveAllocation.Queries.GetAllLeaveAllocations;
+using Hr.LeaveManagement.Application.Features.LeaveAllocation.Queries.GetLeaveAllocations;
 using Hr.LeaveManagement.Application.Features.LeaveAllocation.Queries.GetLeaveAllocationDetails;
 using Hr.LeaveManagement.Domain;
 
